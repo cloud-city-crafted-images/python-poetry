@@ -1,23 +1,20 @@
-# Cloud City Crafted <IMAGE_NAME> Image
+# Cloud City Crafted Python Poetry Image
 
-TBD Image Description
+This image can be used as a basis for a Python image with Poetry installed.
 
 ## 🖥️ System Information
 
-- Base Image: [scratch](https://hub.docker.com/_/scratch/)
-- OS: TBD
-- Codename: TBD
-- Kernel: TBD
+- Base Image: [python:3.12.3-slim](https://hub.docker.com/layers/library/python/3.12.3-slim/images/sha256-fd3817f3a855f6c2ada16ac9468e5ee93e361005bd226fd5a5ee1a504e038c84?context=explore)
+- OS: Debian GNU/Linux 12
+- Codename: bookworm
+- Kernel: Linux version 6.4.16-linuxkit
 
 ## 📦 Packages
 
-- TBD
-
-## ⚙️ Environment Variables
-
-| Name       | Value     |
-| ---------- | --------- |
-| `TBD_NAME` | TBD_VALUE |
+- curl
+- pip
+- python
+- poetry
 
 ## 🧑🏽‍💻 Contributing
 

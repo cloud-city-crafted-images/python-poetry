@@ -1,4 +1,4 @@
-name: Publish Cloud City Crafted <IMAGE_NAME> Image
+name: Publish Cloud City Crafted Python Poetry Image
 
 on:
   workflow_dispatch:
