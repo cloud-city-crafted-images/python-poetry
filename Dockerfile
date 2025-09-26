@@ -4,7 +4,9 @@ ARG POETRY_VERSION="2.0.1"
 
 RUN set -eux; \
 	apt-get update; \
-	apt-get install -y --no-install-recommends; \
+	apt-get install -y --no-install-recommends \
+		unzip \
+	; \
 	apt-get dist-clean
     
 ENV POETRY_HOME="/usr/local/bin/poetry"

@@ -14,6 +14,7 @@ This image can be used as a basis for a Python image with Poetry installed.
 - python: `/usr/local/bin/python`
 - pip: `/usr/local/bin/pip`
 - poetry: `/usr/local/bin/poetry`
+- unzip: `/usr/bin/unzip` 
 
 ## 🧑🏽‍💻 Contributing
 
