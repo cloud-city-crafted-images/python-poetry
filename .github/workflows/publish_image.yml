@@ -21,4 +21,4 @@ jobs:
         uses: cloud-city-crafted-actions/publish-image@v1.1.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          image-version: 1.0.0
+          image-version: 3.13.7
