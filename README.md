@@ -4,17 +4,16 @@ This image can be used as a basis for a Python image with Poetry installed.
 
 ## 🖥️ System Information
 
-- Base Image: [python:3.12.3-slim](https://hub.docker.com/layers/library/python/3.12.3-slim/images/sha256-fd3817f3a855f6c2ada16ac9468e5ee93e361005bd226fd5a5ee1a504e038c84?context=explore)
+- Base Image: [python:3.13.7-slim-trixie](https://hub.docker.com/layers/library/python/3.13.7-slim-trixie)
 - OS: Debian GNU/Linux 12
-- Codename: bookworm
-- Kernel: Linux version 6.4.16-linuxkit
+- Codename: trixie
+- Kernel: Linux version 6.10.14-linuxkit
 
 ## 📦 Packages
 
-- curl
-- pip
-- python
-- poetry
+- python: `/usr/local/bin/python`
+- pip: `/usr/local/bin/pip`
+- poetry: `/usr/local/bin/poetry`
 
 ## 🧑🏽‍💻 Contributing
 
