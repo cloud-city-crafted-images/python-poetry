@@ -11,10 +11,12 @@ This image can be used as a basis for a Python image with Poetry installed.
 
 ## 📦 Packages
 
-- python: `/usr/local/bin/python`
-- pip: `/usr/local/bin/pip`
-- poetry: `/usr/local/bin/poetry`
-- unzip: `/usr/bin/unzip` 
+- curl
+- python
+- pip
+- poetry
+    - POETRY_HOME=/usr/local/bin/poetry
+- unzip
 
 ## 🧑🏽‍💻 Contributing
 
