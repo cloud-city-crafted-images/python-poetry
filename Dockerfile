@@ -1,10 +1,16 @@
-# syntax=docker/dockerfile:1
-FROM python:3.12.3-slim
+FROM python:3.13.7-slim-trixie
 
-ENV POETRY_HOME='/usr/local' \
-    POETRY_VERSION=1.8.3
+ARG POETRY_VERSION="2.0.1"
 
-RUN apt-get -q update
-RUN apt-get -y --no-install-recommends install curl
+RUN set -eux; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends; \
+	apt-get dist-clean
+    
+ENV POETRY_HOME="/usr/local/bin/poetry"
+ENV PYTHONUNBUFFERED=1
+ENV PIP_ROOT_USER_ACTION=ignore
 
-RUN curl -sSL 'https://install.python-poetry.org' | python -
+RUN pip install --upgrade pip; \
+    pip install poetry==${POETRY_VERSION}; \
+    $POETRY_HOME --version;
